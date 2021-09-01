@@ -83,7 +83,7 @@ class Login extends Component {
     });
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (this.Auth.loggedIn()) this.props.history.replace("/Inicio");
   }
 
